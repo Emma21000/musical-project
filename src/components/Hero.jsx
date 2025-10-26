@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero({ data }) {
   return (
-    <div style={{backgroundImage: data.img}} className='flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center w-full h-screen' >
+    <div style={{backgroundImage: data.img}} className='flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center w-full h-screen'>
         <div className='text-white w-4/5 flex flex-col items-start justify-center text-center gap-y-8'>
             <h2 className='text-4xl font-custom tracking-wider'>{data.title}</h2>
             <h2 className='text-2xl font-header tracking-wider'>{data.subtitle}</h2>

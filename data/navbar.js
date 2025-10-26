@@ -6,11 +6,11 @@ export const navbar = {
     list: [
         {
             title: "Home",
-            path: "/home"
+            path: "/"
         },
         {
             title: "Events",
-            path: "/events"
+            path: "#events"
         },
         {
             icon: MdAccountCircle(),
