@@ -25,12 +25,12 @@ function App() {
               <Hero data={hero} />
               <AboutUs data={aboutUs} />
               <Events data={events} />
+              <WhyUs data={whyUs} />
             </>
           }
         />
         <Route path="/newpage" element={<NewPage data={newpage}/>} />
       </Routes>
-      <WhyUs data={whyUs} />
     </>
   )
 }
