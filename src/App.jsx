@@ -10,6 +10,8 @@ import Events from './components/Events'
 import { events } from '../data/events'
 import NewPage from './components/NewPage'
 import { newpage } from '../data/newpage'
+import WhyUs from './components/WhyUs'
+import { whyUs } from '../data/whyUs'
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
         />
         <Route path="/newpage" element={<NewPage data={newpage}/>} />
       </Routes>
+      <WhyUs data={whyUs} />
     </>
   )
 }

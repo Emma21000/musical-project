@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Events({ data }) {
   return (
     <div className='w-full grid grid-cols-1 py-16 bg-[#C5B7CC]' id='events'>
-      <h2 className='mx-auto text-5xl font-custom'>{data.title}</h2>
+      <h2 className='mx-auto text-5xl font-custom text-white'>{data.title}</h2>
       <div className='grid lg:grid-cols-3 grid-cols-1 gap-8 w-4/5 mx-auto pt-10'>
         {data.information.map((elem, index) => (
           <div key={index} className='h-full bg-[#9C92A3] grid grid-cols-1 gap-y-10'>
@@ -13,7 +13,7 @@ export default function Events({ data }) {
               <Link
                 to="/newpage"
                 state={{event: elem,index}}   // ➤ այստեղ փոխանցում ենք ամբողջ event-ի object-ը
-                className='text-2xl font-custom w-96 cursor-pointer hover:underline'
+                className='text-2xl font-custom lg:w-96 w-auto cursor-pointer hover:underline'
               >
                 {elem.title}
               </Link>
