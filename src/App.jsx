@@ -12,6 +12,10 @@ import NewPage from './components/NewPage'
 import { newpage } from '../data/newpage'
 import WhyUs from './components/WhyUs'
 import { whyUs } from '../data/whyUs'
+import Contact from './components/Contact'
+import { contact } from '../data/contact'
+import Footer from './components/Footer'
+import { footer } from '../data/footer'
 
 function App() {
   return (
@@ -26,11 +30,13 @@ function App() {
               <AboutUs data={aboutUs} />
               <Events data={events} />
               <WhyUs data={whyUs} />
+              <Contact data={contact} />
             </>
           }
         />
         <Route path="/newpage" element={<NewPage data={newpage}/>} />
       </Routes>
+      <Footer data={footer} />
     </>
   )
 }
